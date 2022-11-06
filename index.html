@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="main.js"></script>
+    <title>JavaScript Carousel</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="carousel">
+          <button class="carousel__button carousel__button--left is-hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+              <path
+                d="M28.05 36 16 23.95 28.05 11.9l2.15 2.15-9.9 9.9 9.9 9.9Z"
+              />
+            </svg>
+          </button>
+
+          <div class="carousel__track-container">
+            <ul class="carousel__track">
+              <li class="carousel__slide current-slide">
+                <img
+                  src="images/beach1.jpg"
+                  alt="The Beach"
+                  class="carousel__image"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  src="images/beach2.jpg"
+                  alt="The Beach"
+                  class="carousel__image"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  src="images/beach5.jpg"
+                  alt="The Beach"
+                  class="carousel__image"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  src="images/beach4.jpg"
+                  alt="The Beach"
+                  class="carousel__image"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <button class="carousel__button carousel__button--right">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+              <path
+                d="m18.75 36-2.15-2.15 9.9-9.9-9.9-9.9 2.15-2.15L30.8 23.95Z"
+              />
+            </svg>
+          </button>
+
+          <div class="carousel__nav">
+            <!-- <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button> -->
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
